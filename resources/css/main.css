@@ -1,4 +1,203 @@
+/* General CSS */
 * {
     margin: 0;
     padding: 0;
+}
+
+:root {
+    --palette-lightest: #CAA8F5;
+    --palette-light: #9984D4;
+    --palette-mid: #592E83;
+    --palette-dark: #230C33;
+    --palette-contrast: #B27C66;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Monterrat', sans-serif;
+}
+
+body {
+    background-color: lightgray;
+}
+
+/* Top Nav */
+#connect {
+    width: 100%;
+    background-color: #fff;
+    height: 3rem;
+    border-bottom: 2px solid lightgray;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: gray;
+}
+
+#connect ul {
+    display: inline-flex;
+    width: 25%;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+#connect li a {
+    text-decoration: none;
+    color: gray;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#connect li a:hover {
+    color: var(--palette-mid);
+    background-color: ghostwhite;
+    transition: color ease-in-out 0.3s;
+    transition: background-color ease-in-out 0.3s;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger {
+    display: none;
+}
+
+/* Logo */
+.logo {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.logo-e {
+    font-weight: 700;
+}
+
+/* Header */
+header {
+    background-image: linear-gradient(0.03turn, var(--palette-dark), var(--palette-mid), var(--palette-contrast));
+    color: #fff;
+    height: 12rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    padding-left: 3rem;
+    font-size: 5rem;
+    flex-grow: 3;
+}
+
+header h2 {
+    flex-grow: 1;
+    padding-left: 6rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+/* Navigation */
+
+#site {
+    width: 100%;
+    background-color: var(--palette-dark);
+    color: #fff;
+    height: auto;
+}
+
+#site ul {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+    flex-flow: row wrap;
+}
+
+#site li {
+    padding: 20px;
+    margin: 0;
+}
+
+#site li:hover {
+    background-color: var(--palette-light);
+    transition: background-color ease-in-out 0.2s;
+}
+
+#site a {
+    color: #fff;
+    text-decoration: none;
+    padding: 30px;
+}
+
+/* Hamburger */
+#hamburger {
+    display: none;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+/* Breakpoints */
+
+@media only screen and (max-width: 750px) {
+    header h2 {
+        font-size: 1.7rem;
+        padding-left: 15%;
+    }
+}
+
+@media only screen and (max-width: 696px) {
+    header h2 {
+        margin-top: -50px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    header {
+        justify-content: center;
+    }
+    
+    .logo {
+        font-size: 4em;
+        padding: 20%;
+    }
+
+    header h2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 994px) {
+    #site ul {
+        display: none;
+    }
+
+    #connect ul {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+        padding: 10px;
+    }
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 1335px) {
+    #connect ul {
+        width: 95%;
+    }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 500px) {
+    
 }
