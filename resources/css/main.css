@@ -242,6 +242,8 @@ p {
     padding: 20px;
     display: flex;
     flex-flow: column wrap;
+    max-width: 1500px;
+    margin: auto;
 }
 
 .tasks {
