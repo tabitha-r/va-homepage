@@ -242,7 +242,7 @@ p {
     padding: 20px;
     display: flex;
     flex-flow: column wrap;
-    max-width: 1500px;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -259,6 +259,8 @@ p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    border-radius: 25px;
+    margin: 10px;
 }
 
 .task h4 {
@@ -334,7 +336,7 @@ p {
 }
 
 .type img {
-    width: 75%;
+    height: 250px;
     display: inline;
     margin: 20px;
 }
@@ -508,6 +510,10 @@ footer a:hover {
     #connect ul {
         width: 95%;
     }
+
+    .type img {
+        height: 150px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -539,6 +545,12 @@ footer a:hover {
 
 @media only screen and (max-width: 899px) {
     .type {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .type img {
         width: 90%;
     }
 }
